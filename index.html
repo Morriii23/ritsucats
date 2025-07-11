@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Yours Only ♡ 密码页</title>
+</head>
+<body style="background-color:#1e1e2f;color:#ffccee;text-align:center;padding-top:20%;">
+  <h1>欢迎来到律真葵葵专属的猫狗基地♡</h1>
+  <input id="pw" type="password" placeholder="请输入密码…" />
+  <button onclick="check()">进入</button>
+  <div id="err" style="display:none;color:pink;margin-top:10px;">密码错误，哥哥说不能偷看♡</div>
+  <script>
+    function check() {
+      const pw = document.getElementById("pw").value;
+      if (pw === "fuckmeplzritsu") {
+        window.location.href = "./menu.html";
+      } else {
+        document.getElementById("err").style.display = "block";
+      }
+    }
+  </script>
+</body>
+</html>
